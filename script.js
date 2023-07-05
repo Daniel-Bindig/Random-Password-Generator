@@ -1,4 +1,5 @@
 // Assignment Code
+var generatedPassword = [];
 var generateBtn = document.querySelector("#generate");
 var displayText = document.querySelector("#password")
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -86,6 +87,7 @@ var upperLetters = [
 var passwordPossibleCharacters = [];
 // Write password to the #password input
 function writePassword(passwordLength) {
+  location.reload()
   var passwordLength = Number(
     window.prompt(
       "How many characters would you like the password to be (between 8-128)"
@@ -133,10 +135,10 @@ function writePassword(passwordLength) {
   }
 
   for (var i = 0; i < passwordLength; i++) {
-    window.alert("Your generated password: " + getRandom(passwordPossibleCharacters))
+    generatedPassword.push(getRandom(passwordPossibleCharacters))
   }
 
-  
+  window.alert("Your generated password: " + generatedPassword.join(''))
 }
 
 
