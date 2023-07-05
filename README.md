@@ -18,5 +18,5 @@ Then the user is asked for confirmation on several character parameters.
 And then once all the parameters have been selected the password will be generated.
 ![alt text](assets/images/Capture7.JPG)
 
-Link to working application:
+Link to working application: https://daniel-bindig.github.io/Random-Password-Generator/
 
